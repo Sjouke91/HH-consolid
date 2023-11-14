@@ -1,0 +1,228 @@
+@import '../abstracts';
+
+// ===========================================================================
+// INPUT FIELDS
+// ===========================================================================
+/*Change text in autofill textbox*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+}
+
+select {
+  color: $c-text;
+}
+
+label {
+  font-family: $font-primary;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $c-text !important;
+}
+
+.text-danger {
+  color: red !important;
+}
+
+input {
+  outline: none;
+  border: none;
+  padding: 0 12px;
+  border-radius: 4px;
+  color: $c-text;
+  outline: 2px solid transparent;
+  border: 1px solid transparent;
+
+  &[type='text'],
+  &[type='email'],
+  &[type='text'],
+  &[type='number'],
+  &[type='tel'],
+  &[type='url'],
+  &[type='date'] {
+    background-color: $c-white;
+  }
+
+  &:focus-visible {
+    outline: none;
+    outline: 2px solid $c-primary;
+  }
+  &:focus-within {
+    border: 1px solid $c-primary;
+    outline: 2px solid $c-quaternary !important;
+  }
+  &.error {
+    border: 1px solid $c-primary;
+    outline: 2px solid red !important;
+  }
+  &::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+  }
+  height: 3em !important;
+}
+
+textarea {
+  padding: 12px;
+  height: 8em !important;
+  border: none;
+  background-color: $c-white;
+  color: $c-text;
+  border-radius: 4px;
+
+  &:focus-visible {
+    outline: none;
+    border: 2px solid $c-quaternary;
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+  }
+  border-radius: none !important;
+}
+
+.OptInPrivacy-input {
+  > label {
+    display: none;
+  }
+}
+
+.checkbox {
+  position: relative;
+  label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: unset;
+    a {
+      font-weight: 700;
+    }
+
+    input[type='checkbox'] {
+      display: none;
+    }
+    span {
+      margin: 0;
+      margin-left: 25px;
+      padding: 10px 0;
+    }
+
+    span::before,
+    span::after {
+      position: absolute;
+      content: '';
+      display: inline-block;
+    }
+
+    //outer box
+    span::before {
+      height: 15px;
+      width: 15px;
+      background-color: white;
+      border: 1px solid $c-primary;
+      border-radius: 4px;
+      left: 0px;
+      margin-top: 3px;
+    }
+
+    /*Checkmark of checkbox*/
+    span::after {
+      height: 3px;
+      width: 10px;
+      border-left: 2px solid $c-primary;
+      border-bottom: 2px solid $c-primary;
+      color: $c-primary;
+      transform: rotate(-45deg);
+      left: 3px;
+      top: 8px;
+    }
+
+    /*Hide the checkmark by default*/
+    input[type='checkbox'] + span::after {
+      content: none;
+    }
+
+    /*Hide the checkmark by default*/
+    input[type='checkbox']:checked + span::before {
+      content: '';
+      background-color: white;
+      border: 1px solid $c-primary;
+    }
+
+    /*Unhide on the checked state*/
+    input[type='checkbox']:checked + span::after {
+      content: '';
+    }
+  }
+}
+
+.field-radio-group {
+  display: flex;
+  gap: $grid-gap;
+
+  label {
+    cursor: pointer;
+
+    > span {
+      margin-left: 5px;
+      display: flex;
+      align-items: center;
+
+      > span {
+        position: relative;
+      }
+
+      > span::before,
+      > span::after {
+        content: '';
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        background-color: $c-primary;
+        border: none;
+        border-radius: 10px;
+        position: absolute;
+      }
+      > span::before {
+        height: 14px;
+        width: 14px;
+        background-color: white;
+        border: 1px solid $c-text;
+        border-radius: 10px;
+        left: -18px;
+      }
+      input[type='radio'] {
+        opacity: 0;
+      }
+      input[type='radio'] + span::after {
+        content: none;
+      }
+      input[type='radio']:checked + span::after {
+        content: '';
+        top: 3px;
+        left: -15px;
+      }
+      input[type='radio']:checked + span::before {
+        content: '';
+        background-color: white;
+        border: 1px solid $c-primary;
+      }
+    }
+  }
+}

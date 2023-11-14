@@ -1,0 +1,31 @@
+// ===========================================================================
+// COLOR VARIABLES
+// ===========================================================================
+
+$c-error: red;
+$c-warning: yellow;
+$c-success: green;
+$c-white: #ffffff;
+$c-black: #131617;
+$c-grey: #e5e5e4;
+$c-light-grey: #f3f3f3;
+
+$c-primary: #7f2629;
+$c-secondary: #671d20;
+$c-tertiary: #2999f5;
+$c-quaternary: #bdd8f1;
+
+$c-text: $c-primary;
+$c-text-inverse: $c-white;
+
+$c-background-primary: $c-white;
+$c-background-secondary: $c-primary;
+$c-background-tertiary: $c-light-grey;
+$c-background-quaternary: $c-secondary;
+
+:root {
+  --c-primary: $c-primary;
+  --c-secondary: $c-secondary;
+  --c-tertiary: $c-tertiary;
+  --c-quaternary: $c-quaternary;
+}

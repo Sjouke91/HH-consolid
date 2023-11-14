@@ -1,0 +1,103 @@
+.c-filter-range {
+  &__wrapper {
+    position: relative;
+    overflow: hidden;
+    padding: 4px 2px;
+    margin: 14px 0 6px;
+  }
+  &__zip-wrapper {
+    position: relative;
+  }
+  &__zip-search {
+    width: 100%;
+    border: 2px solid $c-text;
+    border-radius: 15px;
+    padding-left: 32px;
+    position: relative;
+    color: $c-text;
+    height: 3rem !important;
+  }
+  &__zip-label {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 12px;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    line-height: 100%;
+  }
+  &__button {
+    background: $c-primary;
+    text-align: center;
+    // position: absolute;
+    color: $c-white;
+    right: 6px;
+    top: 8px;
+    bottom: 8px;
+    border-radius: 15px;
+    // transform: translateX(0%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 24px;
+    overflow: hidden;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+    max-height: 100px;
+    overflow: hidden;
+    &--disabled {
+      pointer-events: none;
+      opacity: 0;
+      cursor: disabled;
+      max-height: 0;
+      padding: 0;
+    }
+  }
+  &__fieldset-title {
+    color: $c-text;
+    padding: 12px 0 8px;
+    font-weight: 500;
+  }
+  &__fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    label {
+      position: relative;
+      padding-left: 2rem;
+      font-weight: $font-weight-normal;
+      &::before {
+        content: '';
+        display: block;
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        box-sizing: border-box;
+        border: 1px solid $c-secondary;
+        box-shadow: inset 0 0 0 2px $c-white;
+        border-radius: 2rem;
+      }
+    }
+    input {
+      display: none !important;
+
+      &:checked + label::before {
+        background-color: $c-primary;
+        color: $c-white;
+      }
+    }
+  }
+  &__range-input {
+    color: $c-text;
+  }
+}
+.pac-item,
+.pac-item-selected,
+.pac-matched,
+.pac-item-query {
+  color: #000 !important;
+}

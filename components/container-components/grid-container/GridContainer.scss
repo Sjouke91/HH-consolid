@@ -1,0 +1,70 @@
+.c-grid-container {
+  &__outer-wrapper {
+    background-repeat: no-repeat;
+    &.alignment-left-top {
+      background-position: top left;
+    }
+    &.alignment-left-center {
+      background-position: center left;
+    }
+    &.alignment-left-bottom {
+      background-position: bottom left;
+    }
+    &.alignment-right-top {
+      background-position: top right;
+    }
+    &.alignment-right-center {
+      background-position: center right;
+    }
+    &.alignment-right-bottom {
+      background-position: bottom right;
+    }
+  }
+  &__inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    overflow: hidden;
+  }
+  &__subtitle {
+    text-align: center;
+  }
+  &__title {
+    text-align: center;
+    word-break: break-word;
+    hyphens: auto;
+  }
+  &__tile-container {
+    width: 100%;
+    display: grid;
+    gap: 32px;
+
+    //we only currently use col-1 and col-3 in Storyblok
+    &.col-1 {
+      grid-template-columns: 1fr;
+    }
+    &.col-2 {
+      grid-template-columns: 1fr 1fr;
+    }
+    &.col-3 {
+      grid-template-columns: 1fr 1fr 1fr;
+      @media (max-width: $bp-tablet) {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    &.col-4 {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    &.col-5 {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    @media (max-width: $bp-mobile) {
+      grid-template-columns: 1fr !important;
+    }
+  }
+  &__button-container {
+    padding: 1px;
+  }
+}

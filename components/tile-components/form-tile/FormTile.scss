@@ -1,0 +1,33 @@
+.c-form-tile {
+  &__tile-wrapper {
+    background-color: $c-background-quaternary;
+    * {
+      color: $c-text !important;
+    }
+    padding: 40px;
+
+    @media (max-width: $bp-mobile) {
+      padding: 40px 16px;
+      border-radius: 0px;
+    }
+  }
+  &__form-container {
+    fieldset {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+
+      @media screen and (max-width: $bp-mobile) {
+        gap: unset;
+        row-gap: 24px;
+      }
+    }
+  }
+  &__title {
+    word-break: break-word;
+    hyphens: auto;
+  }
+  &__text-container {
+    margin-bottom: 24px;
+  }
+}

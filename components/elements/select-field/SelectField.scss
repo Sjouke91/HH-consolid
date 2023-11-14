@@ -1,0 +1,36 @@
+.c-select-field {
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__menu {
+  }
+  &__placeholder {
+  }
+
+  &__wrapper {
+    position: relative;
+    width: 100%;
+
+    select {
+      width: 100%;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-image: url('/circle8-arrow-down.svg');
+      background-repeat: no-repeat;
+      height: 15px;
+      width: 15px;
+      right: 1rem;
+      // padding-left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 0;
+      //This stops the after element blocking click event
+      pointer-events: none;
+    }
+  }
+}

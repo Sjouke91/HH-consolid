@@ -1,0 +1,1375 @@
+{
+  "__typename": "JobsListerBlock",
+  "entryTitle": "/vacatures/ - jobs-lister-block - main lister",
+  "background": false,
+  "blockTitle": null,
+  "fullWidth": false,
+  "sys": {
+    "__typename": "Sys",
+    "id": "3W0ef1Xi1hLLK5pmzF0ghb"
+  },
+  "isCategoryListing": false,
+  "categoryFilters": {
+    "filters": [
+      {
+        "filter": "region",
+        "visible": true,
+        "filterValue": null,
+        "showOnJobCard": true
+      },
+      {
+        "filter": "industry",
+        "visible": true,
+        "filterValue": null,
+        "showOnJobCard": true
+      },
+      {
+        "filter": "functionGroup",
+        "visible": true,
+        "filterValue": null,
+        "showOnJobCard": false
+      },
+      {
+        "filter": "function",
+        "visible": true,
+        "filterValue": null,
+        "showOnJobCard": false
+      },
+      {
+        "filter": "experienceLevel",
+        "visible": true,
+        "filterValue": null,
+        "showOnJobCard": true
+      },
+      {
+        "filter": "educationLevel",
+        "visible": true,
+        "filterValue": null,
+        "showOnJobCard": true
+      },
+      {
+        "filter": "hoursPerWeek",
+        "visible": false,
+        "filterValue": null,
+        "showOnJobCard": true
+      },
+      {
+        "filter": "sector",
+        "visible": false,
+        "filterValue": null,
+        "showOnJobCard": false
+      },
+      {
+        "filter": "companyType",
+        "visible": false,
+        "filterValue": null,
+        "showOnJobCard": false
+      }
+    ],
+    "showFilters": true,
+    "showSorting": true,
+    "showTopJobs": true,
+    "sortingOrder": "topJob"
+  },
+  "showFavorites": false,
+  "jobsData": [
+    {
+      "__typename": "Vacancy",
+      "_id": "64d2cda1c8db9c8c9a534aab",
+      "jobId": "2021-00029",
+      "status": "In progress",
+      "priorityStatus": "",
+      "isDeleted": false,
+      "firstPublishedAt": {
+        "__typename": "VacancyFirstPublishedAt",
+        "timestamp": {
+          "__typename": "VacancyFirstPublishedAtTimestamp",
+          "t": 1631172249000,
+          "i": 1
+        }
+      },
+      "startingDate": {
+        "__typename": "VacancyStartingDate",
+        "timestamp": {
+          "__typename": "VacancyStartingDateTimestamp",
+          "t": 1633046400000,
+          "i": 1
+        }
+      },
+      "closingDate": {
+        "__typename": "VacancyClosingDate",
+        "timestamp": {
+          "__typename": "VacancyClosingDateTimestamp",
+          "t": 1665532800000,
+          "i": 1
+        }
+      },
+      "showWebsiteStartDate": {
+        "__typename": "VacancyShowWebsiteStartDate",
+        "timestamp": {
+          "__typename": "VacancyShowWebsiteStartDateTimestamp",
+          "t": null,
+          "i": null
+        }
+      },
+      "showWebsiteEndDate": {
+        "__typename": "VacancyShowWebsiteEndDate",
+        "timestamp": {
+          "__typename": "VacancyShowWebsiteEndDateTimestamp",
+          "t": null,
+          "i": null
+        }
+      },
+      "publicationId": "a0t09000000vOcDAAU",
+      "category": "",
+      "industry": "Marketing",
+      "function": "Digital Marketeer",
+      "functionGroup": "Online Marketing",
+      "sector": "E-commerce",
+      "topVacature": true,
+      "subCategory": "",
+      "title": "Online Marketeer",
+      "intro": "<p>Ben jij gek van online marketing en heb je affiniteit met recruitment en wil je graag impact maken bij klanten? Dan is dit jouw kans! Jij zorgt dat het aantrekken van nieuw talent voor bedrijven een makkie lijkt.</p>",
+      "location": {
+        "__typename": "VacancyLocation",
+        "city": "Utrecht",
+        "region": "Utrecht",
+        "country": "Nederland",
+        "postalCode": "3526 KS",
+        "address": "Europalaan 400 - 8"
+      },
+      "salary": {
+        "__typename": "VacancySalary",
+        "from": 3500,
+        "to": 4500,
+        "period": "Month"
+      },
+      "specs": {
+        "__typename": "VacancySpec",
+        "educationLevel": "Higher Vocational Education +",
+        "employmentTerm": "",
+        "experienceLevel": "Starter",
+        "hoursPerWeek": 40,
+        "languages": [""]
+      },
+      "workingHours": {
+        "__typename": "VacancyWorkingHour",
+        "min": 32,
+        "max": 40
+      },
+      "tags": [""],
+      "recruiter": {
+        "__typename": "VacancyRecruiter",
+        "fullName": "Jannick Plantinga",
+        "email": "jannick@digitalradicals.nl",
+        "phone": "+31 0657660817",
+        "id": "00509000009hEj3AAE",
+        "avatar": "https://direct-impact.file.force.com/profilephoto/005/F"
+      },
+      "company": {
+        "__typename": "VacancyCompany",
+        "name": "Direct Impact",
+        "companyType": "Scale-up"
+      }
+    },
+    {
+      "__typename": "Vacancy",
+      "_id": "64d2cda1c8db9c8c9a534aac",
+      "jobId": "2021-00022",
+      "status": "In progress",
+      "priorityStatus": "",
+      "isDeleted": false,
+      "firstPublishedAt": {
+        "__typename": "VacancyFirstPublishedAt",
+        "timestamp": {
+          "__typename": "VacancyFirstPublishedAtTimestamp",
+          "t": 1625250817000,
+          "i": 1
+        }
+      },
+      "startingDate": {
+        "__typename": "VacancyStartingDate",
+        "timestamp": {
+          "__typename": "VacancyStartingDateTimestamp",
+          "t": 1625184000000,
+          "i": 1
+        }
+      },
+      "closingDate": {
+        "__typename": "VacancyClosingDate",
+        "timestamp": {
+          "__typename": "VacancyClosingDateTimestamp",
+          "t": 1672444800000,
+          "i": 1
+        }
+      },
+      "showWebsiteStartDate": {
+        "__typename": "VacancyShowWebsiteStartDate",
+        "timestamp": {
+          "__typename": "VacancyShowWebsiteStartDateTimestamp",
+          "t": 1625184000000,
+          "i": 1
+        }
+      },
+      "showWebsiteEndDate": {
+        "__typename": "VacancyShowWebsiteEndDate",
+        "timestamp": {
+          "__typename": "VacancyShowWebsiteEndDateTimestamp",
+          "t": null,
+          "i": null
+        }
+      },
+      "publicationId": "a0t0900000131bXAAQ",
+      "category": "",
+      "industry": "Support",
+      "function": "Recruiter",
+      "functionGroup": "Support",
+      "sector": "HR / Recruitment",
+      "topVacature": true,
+      "subCategory": "",
+      "title": "Recruiter Digital Marketing",
+      "intro": "<p>We zijn op zoek naar 2 Recruiters Digital Marketing om onze opdrachtgevers in turbo-mode te helpen aan de juiste kandidaten en groei. Daarnaast ben je een ster in menselijk contact!</p>",
+      "location": {
+        "__typename": "VacancyLocation",
+        "city": "Groningen",
+        "region": "Groningen",
+        "country": "Nederland",
+        "postalCode": "9752BP",
+        "address": "Groningen"
+      },
+      "salary": {
+        "__typename": "VacancySalary",
+        "from": 2500,
+        "to": 3500,
+        "period": "Month"
+      },
+      "specs": {
+        "__typename": "VacancySpec",
+        "educationLevel": "Higher Vocational Education",
+        "employmentTerm": "Permanent",
+        "experienceLevel": "Starter",
+        "hoursPerWeek": 40,
+        "languages": [""]
+      },
+      "workingHours": {
+        "__typename": "VacancyWorkingHour",
+        "min": 32,
+        "max": 40
+      },
+      "tags": [""],
+      "recruiter": {
+        "__typename": "VacancyRecruiter",
+        "fullName": "Jochem de Josselin de Jong",
+        "email": "jochem@digitalradicals.nl",
+        "phone": "+31 643028468",
+        "id": "00509000005gYpdAAE",
+        "avatar": "https://direct-impact.file.force.com/profilephoto/72909000001DtA3/F"
+      },
+      "company": {
+        "__typename": "VacancyCompany",
+        "name": "Digital Radicals",
+        "companyType": "Scale-up"
+      }
+    },
+    {
+      "__typename": "Vacancy",
+      "_id": "64d2cda1c8db9c8c9a534aad",
+      "jobId": "2021-00121",
+      "status": "In progress",
+      "priorityStatus": "",
+      "isDeleted": false,
+      "firstPublishedAt": {
+        "__typename": "VacancyFirstPublishedAt",
+        "timestamp": {
+          "__typename": "VacancyFirstPublishedAtTimestamp",
+          "t": 1640089545000,
+          "i": 1
+        }
+      },
+      "startingDate": {
+        "__typename": "VacancyStartingDate",
+        "timestamp": {
+          "__typename": "VacancyStartingDateTimestamp",
+          "t": 1657584000000,
+          "i": 1
+        }
+      },
+      "closingDate": {
+        "__typename": "VacancyClosingDate",
+        "timestamp": {
+          "__typename": "VacancyClosingDateTimestamp",
+          "t": 1665532800000,
+          "i": 1
+        }
+      },
+      "showWebsiteStartDate": {
+        "__typename": "VacancyShowWebsiteStartDate",
+        "timestamp": {
+          "__typename": "VacancyShowWebsiteStartDateTimestamp",
+          "t": 1678320000000,
+          "i": 1
+        }
+      },
+      "showWebsiteEndDate": {
+        "__typename": "VacancyShowWebsiteEndDate",
+        "timestamp": {
+          "__typename": "VacancyShowWebsiteEndDateTimestamp",
+          "t": null,
+          "i": null
+        }
+      },
+      "publicationId": "a0t090000041BaMAAU",
+      "category": "",
+      "industry": "Marketing",
+      "function": "Online Marketeer",
+      "functionGroup": "Online Marketing",
+      "sector": "Agency",
+      "topVacature": false,
+      "subCategory": "",
+      "title": "SEA Specialist",
+      "intro": "<p>Ben jij gek van Google en Bing en wil jij in een omgeving met Ex-Googlers jouw SEA kennis opkrikken naar een ongekend niveau? Dan zijn wij op zoek naar jou!</p>",
+      "location": {
+        "__typename": "VacancyLocation",
+        "city": "Rotterdam",
+        "region": "South Holland",
+        "country": "Nederland",
+        "postalCode": "3011 KD",
+        "address": "Goudsesingel 190"
+      },
+      "salary": {
+        "__typename": "VacancySalary",
+        "from": 3000,
+        "to": 4000,
+        "period": "Month"
+      },
+      "specs": {
+        "__typename": "VacancySpec",
+        "educationLevel": "Higher Vocational Education",
+        "employmentTerm": "",
+        "experienceLevel": "Junior",
+        "hoursPerWeek": 40,
+        "languages": [""]
+      },
+      "workingHours": {
+        "__typename": "VacancyWorkingHour",
+        "min": 32,
+        "max": 40
+      },
+      "tags": [""],
+      "recruiter": {
+        "__typename": "VacancyRecruiter",
+        "fullName": "Jannick Plantinga",
+        "email": "jannick@digitalradicals.nl",
+        "phone": "+31 0657660817",
+        "id": "00509000009hEj3AAE",
+        "avatar": "https://direct-impact.file.force.com/profilephoto/005/F"
+      },
+      "company": {
+        "__typename": "VacancyCompany",
+        "name": "Maatwerk Online",
+        "companyType": "Scale-up"
+      }
+    },
+    {
+      "__typename": "Vacancy",
+      "_id": "64d2cda1c8db9c8c9a534aae",
+      "jobId": "2022-00218",
+      "status": "In progress",
+      "priorityStatus": "",
+      "isDeleted": false,
+      "firstPublishedAt": {
+        "__typename": "VacancyFirstPublishedAt",
+        "timestamp": {
+          "__typename": "VacancyFirstPublishedAtTimestamp",
+          "t": 1655271926000,
+          "i": 1
+        }
+      },
+      "startingDate": {
+        "__typename": "VacancyStartingDate",
+        "timestamp": {
+          "__typename": "VacancyStartingDateTimestamp",
+          "t": null,
+          "i": null
+        }
+      },
+      "closingDate": {
+        "__typename": "VacancyClosingDate",
+        "timestamp": {
+          "__typename": "VacancyClosingDateTimestamp",
+          "t": null,
+          "i": null
+        }
+      },
+      "showWebsiteStartDate": {
+        "__typename": "VacancyShowWebsiteStartDate",
+        "timestamp": {
+          "__typename": "VacancyShowWebsiteStartDateTimestamp",
+          "t": 1682380800000,
+          "i": 1
+        }
+      },
+      "showWebsiteEndDate": {
+        "__typename": "VacancyShowWebsiteEndDate",
+        "timestamp": {
+          "__typename": "VacancyShowWebsiteEndDateTimestamp",
+          "t": null,
+          "i": null
+        }
+      },
+      "publicationId": "a0t090000043DwtAAE",
+      "category": "",
+      "industry": "Marketing",
+      "function": "Digital Marketeer",
+      "functionGroup": "Digital Marketing",
+      "sector": "E-commerce",
+      "topVacature": false,
+      "subCategory": "",
+      "title": "Performance Marketeer",
+      "intro": "<p>Gezocht: een ijzersterke Performance Marketeer met een enorme drive om de ROI te verhogen en ook nog eens een passie heeft voor fashion . We willen iemand die onze online aanwezigheid kan opvoeren en ons kan helpen onze doelgroep te bereiken zonder dat we onze kleren moeten uittrekken.</p>",
+      "location": {
+        "__typename": "VacancyLocation",
+        "city": "Purmerend",
+        "region": "North Holland",
+        "country": "Nederland",
+        "postalCode": "1442 LA",
+        "address": "Kwadijkerkoogweg 23"
+      },
+      "salary": {
+        "__typename": "VacancySalary",
+        "from": 3000,
+        "to": 4000,
+        "period": "Month"
+      },
+      "specs": {
+        "__typename": "VacancySpec",
+        "educationLevel": "Higher Vocational Education",
+        "employmentTerm": "",
+        "experienceLevel": "Junior",
+        "hoursPerWeek": 40,
+        "languages": [""]
+      },
+      "workingHours": {
+        "__typename": "VacancyWorkingHour",
+        "min": 32,
+        "max": 40
+      },
+      "tags": [""],
+      "recruiter": {
+        "__typename": "VacancyRecruiter",
+        "fullName": "Jannick Plantinga",
+        "email": "jannick@digitalradicals.nl",
+        "phone": "+31 0657660817",
+        "id": "00509000009hEj3AAE",
+        "avatar": "https://direct-impact.file.force.com/profilephoto/005/F"
+      },
+      "company": {
+        "__typename": "VacancyCompany",
+        "name": "OGER Fashion",
+        "companyType": "Scale-up"
+      }
+    },
+    {
+      "__typename": "Vacancy",
+      "_id": "64d2cda1c8db9c8c9a534aaf",
+      "jobId": "2022-00392",
+      "status": "In progress",
+      "priorityStatus": "",
+      "isDeleted": false,
+      "firstPublishedAt": {
+        "__typename": "VacancyFirstPublishedAt",
+        "timestamp": {
+          "__typename": "VacancyFirstPublishedAtTimestamp",
+          "t": 1660657710000,
+          "i": 1
+        }
+      },
+      "startingDate": {
+        "__typename": "VacancyStartingDate",
+        "timestamp": {
+          "__typename": "VacancyStartingDateTimestamp",
+          "t": 1684886400000,
+          "i": 1
+        }
+      },
+      "closingDate": {
+        "__typename": "VacancyClosingDate",
+        "timestamp": {
+          "__typename": "VacancyClosingDateTimestamp",
+          "t": 1690848000000,
+          "i": 1
+        }
+      },
+      "showWebsiteStartDate": {
+        "__typename": "VacancyShowWebsiteStartDate",
+        "timestamp": {
+          "__typename": "VacancyShowWebsiteStartDateTimestamp",
+          "t": 1684886400000,
+          "i": 1
+        }
+      },
+      "showWebsiteEndDate": {
+        "__typename": "VacancyShowWebsiteEndDate",
+        "timestamp": {
+          "__typename": "VacancyShowWebsiteEndDateTimestamp",
+          "t": null,
+          "i": null
+        }
+      },
+      "publicationId": "a0tJy000000JmvNIAS",
+      "category": "",
+      "industry": "Marketing",
+      "function": "",
+      "functionGroup": "Content Marketing",
+      "sector": "Agency",
+      "topVacature": false,
+      "subCategory": "",
+      "title": "Online marketeer SEO",
+      "intro": "<p><span >Ben jij gek van online marketing en heb je kennis van SEO en organische groei? Dan is dit jouw kans! </span></p>",
+      "location": {
+        "__typename": "VacancyLocation",
+        "city": "Utrecht",
+        "region": "Utrecht",
+        "country": "Nederland",
+        "postalCode": "3526 KS",
+        "address": "Europalaan 400"
+      },
+      "salary": {
+        "__typename": "VacancySalary",
+        "from": 2500,
+        "to": 3000,
+        "period": "Month"
+      },
+      "specs": {
+        "__typename": "VacancySpec",
+        "educationLevel": "Higher Vocational Education",
+        "employmentTerm": "",
+        "experienceLevel": "Starter",
+        "hoursPerWeek": 40,
+        "languages": [""]
+      },
+      "workingHours": {
+        "__typename": "VacancyWorkingHour",
+        "min": 32,
+        "max": 40
+      },
+      "tags": [""],
+      "recruiter": {
+        "__typename": "VacancyRecruiter",
+        "fullName": "Jetze Golbach",
+        "email": "jetze@digitalradicals.nl",
+        "phone": "",
+        "id": "00509000009kH8yAAE",
+        "avatar": "https://direct-impact.file.force.com/profilephoto/005/F"
+      },
+      "company": {
+        "__typename": "VacancyCompany",
+        "name": "Direct Impact",
+        "companyType": "Scale-up"
+      }
+    },
+    {
+      "__typename": "Vacancy",
+      "_id": "64d2cda1c8db9c8c9a534ab0",
+      "jobId": "2022-00687",
+      "status": "In progress",
+      "priorityStatus": "",
+      "isDeleted": false,
+      "firstPublishedAt": {
+        "__typename": "VacancyFirstPublishedAt",
+        "timestamp": {
+          "__typename": "VacancyFirstPublishedAtTimestamp",
+          "t": 1667919100000,
+          "i": 1
+        }
+      },
+      "startingDate": {
+        "__typename": "VacancyStartingDate",
+        "timestamp": {
+          "__typename": "VacancyStartingDateTimestamp",
+          "t": null,
+          "i": null
+        }
+      },
+      "closingDate": {
+        "__typename": "VacancyClosingDate",
+        "timestamp": {
+          "__typename": "VacancyClosingDateTimestamp",
+          "t": null,
+          "i": null
+        }
+      },
+      "showWebsiteStartDate": {
+        "__typename": "VacancyShowWebsiteStartDate",
+        "timestamp": {
+          "__typename": "VacancyShowWebsiteStartDateTimestamp",
+          "t": null,
+          "i": null
+        }
+      },
+      "showWebsiteEndDate": {
+        "__typename": "VacancyShowWebsiteEndDate",
+        "timestamp": {
+          "__typename": "VacancyShowWebsiteEndDateTimestamp",
+          "t": null,
+          "i": null
+        }
+      },
+      "publicationId": "a0tJy000004QKbtIAG",
+      "category": "",
+      "industry": "Marketing",
+      "function": "SEA Marketeer",
+      "functionGroup": "Online Marketing",
+      "sector": "E-commerce",
+      "topVacature": false,
+      "subCategory": "",
+      "title": "Senior SEA Specialist",
+      "intro": "<p>Wil jij graag je stempel drukken bij een internationaal hard groeiende organisatie? Ben jij helemaal wild van SEA en opereer jij het best in een team van aanstekelijke enthousiastelingen? 3,2,1 solliciteren maar!!!</p>",
+      "location": {
+        "__typename": "VacancyLocation",
+        "city": "Nederhorst den Berg",
+        "region": "North Holland",
+        "country": "Nederland",
+        "postalCode": "1394PC",
+        "address": "Nieuw Walden 56"
+      },
+      "salary": {
+        "__typename": "VacancySalary",
+        "from": 3500,
+        "to": 4500,
+        "period": "Month"
+      },
+      "specs": {
+        "__typename": "VacancySpec",
+        "educationLevel": "Higher Vocational Education",
+        "employmentTerm": "",
+        "experienceLevel": "Medior",
+        "hoursPerWeek": 40,
+        "languages": [""]
+      },
+      "workingHours": {
+        "__typename": "VacancyWorkingHour",
+        "min": 32,
+        "max": 40
+      },
+      "tags": [""],
+      "recruiter": {
+        "__typename": "VacancyRecruiter",
+        "fullName": "Jannick Plantinga",
+        "email": "jannick@digitalradicals.nl",
+        "phone": "+31 0657660817",
+        "id": "00509000009hEj3AAE",
+        "avatar": "https://direct-impact.file.force.com/profilephoto/005/F"
+      },
+      "company": {
+        "__typename": "VacancyCompany",
+        "name": "123inkt.nl",
+        "companyType": "MKB"
+      }
+    },
+    {
+      "__typename": "Vacancy",
+      "_id": "64d2cda1c8db9c8c9a534ab1",
+      "jobId": "2023-00077",
+      "status": "In progress",
+      "priorityStatus": "",
+      "isDeleted": false,
+      "firstPublishedAt": {
+        "__typename": "VacancyFirstPublishedAt",
+        "timestamp": {
+          "__typename": "VacancyFirstPublishedAtTimestamp",
+          "t": 1675691425000,
+          "i": 1
+        }
+      },
+      "startingDate": {
+        "__typename": "VacancyStartingDate",
+        "timestamp": {
+          "__typename": "VacancyStartingDateTimestamp",
+          "t": 1677628800000,
+          "i": 1
+        }
+      },
+      "closingDate": {
+        "__typename": "VacancyClosingDate",
+        "timestamp": {
+          "__typename": "VacancyClosingDateTimestamp",
+          "t": 1690848000000,
+          "i": 1
+        }
+      },
+      "showWebsiteStartDate": {
+        "__typename": "VacancyShowWebsiteStartDate",
+        "timestamp": {
+          "__typename": "VacancyShowWebsiteStartDateTimestamp",
+          "t": null,
+          "i": null
+        }
+      },
+      "showWebsiteEndDate": {
+        "__typename": "VacancyShowWebsiteEndDate",
+        "timestamp": {
+          "__typename": "VacancyShowWebsiteEndDateTimestamp",
+          "t": null,
+          "i": null
+        }
+      },
+      "publicationId": "a0tJy000007TnVxIAK",
+      "category": "",
+      "industry": "Marketing",
+      "function": "A/B Tester",
+      "functionGroup": "Digital Marketing",
+      "sector": "Retail",
+      "topVacature": false,
+      "subCategory": "",
+      "title": "CRO specialist",
+      "intro": "<p>Voor dit retail bedrijf met mega ambities kan jij het verschil maken! Niet alleen voor het bedrijf, maar zeer zeker ook voor je eigen carrière.</p><p>Lees vooral verder als jij impact wilt maken!</p>",
+      "location": {
+        "__typename": "VacancyLocation",
+        "city": "Bleiswijk",
+        "region": "South Holland",
+        "country": "Nederland",
+        "postalCode": "3190 GA",
+        "address": "Facetlaan 6"
+      },
+      "salary": {
+        "__typename": "VacancySalary",
+        "from": 2500,
+        "to": 3000,
+        "period": "Month"
+      },
+      "specs": {
+        "__typename": "VacancySpec",
+        "educationLevel": "Higher Vocational Education +",
+        "employmentTerm": "",
+        "experienceLevel": "Junior",
+        "hoursPerWeek": 40,
+        "languages": [""]
+      },
+      "workingHours": {
+        "__typename": "VacancyWorkingHour",
+        "min": 36,
+        "max": 40
+      },
+      "tags": [""],
+      "recruiter": {
+        "__typename": "VacancyRecruiter",
+        "fullName": "Martin Bekker",
+        "email": "martin@digitalradicals.nl",
+        "phone": "",
+        "id": "0050900000AWi4FAAT",
+        "avatar": "https://direct-impact.file.force.com/profilephoto/005/F"
+      },
+      "company": {
+        "__typename": "VacancyCompany",
+        "name": "Hoogvliet supermarkt",
+        "companyType": "Corporate"
+      }
+    },
+    {
+      "__typename": "Vacancy",
+      "_id": "64d2cda1c8db9c8c9a534ab2",
+      "jobId": "2023-00078",
+      "status": "In progress",
+      "priorityStatus": "",
+      "isDeleted": false,
+      "firstPublishedAt": {
+        "__typename": "VacancyFirstPublishedAt",
+        "timestamp": {
+          "__typename": "VacancyFirstPublishedAtTimestamp",
+          "t": 1675703959000,
+          "i": 1
+        }
+      },
+      "startingDate": {
+        "__typename": "VacancyStartingDate",
+        "timestamp": {
+          "__typename": "VacancyStartingDateTimestamp",
+          "t": 1677628800000,
+          "i": 1
+        }
+      },
+      "closingDate": {
+        "__typename": "VacancyClosingDate",
+        "timestamp": {
+          "__typename": "VacancyClosingDateTimestamp",
+          "t": null,
+          "i": null
+        }
+      },
+      "showWebsiteStartDate": {
+        "__typename": "VacancyShowWebsiteStartDate",
+        "timestamp": {
+          "__typename": "VacancyShowWebsiteStartDateTimestamp",
+          "t": 1676505600000,
+          "i": 1
+        }
+      },
+      "showWebsiteEndDate": {
+        "__typename": "VacancyShowWebsiteEndDate",
+        "timestamp": {
+          "__typename": "VacancyShowWebsiteEndDateTimestamp",
+          "t": null,
+          "i": null
+        }
+      },
+      "publicationId": "a0tJy000007UN4nIAG",
+      "category": "",
+      "industry": "Marketing",
+      "function": "",
+      "functionGroup": "Digital Marketing",
+      "sector": "Agency",
+      "topVacature": false,
+      "subCategory": "",
+      "title": "Online Marketeer",
+      "intro": "<p>Wil jij je passie voor sport en online marketing terugvinden in je werk? Heb jij daarnaast een enorme drive om op grote schaal bij te kunnen dragen aan een gezondere wereld?! Joehoeee, lees ff verder dan!</p>",
+      "location": {
+        "__typename": "VacancyLocation",
+        "city": "Amsterdam",
+        "region": "North Holland",
+        "country": "Amsterdam",
+        "postalCode": "1033 RH",
+        "address": "Computerweg 21"
+      },
+      "salary": {
+        "__typename": "VacancySalary",
+        "from": 3000,
+        "to": 4000,
+        "period": "Month"
+      },
+      "specs": {
+        "__typename": "VacancySpec",
+        "educationLevel": "Higher Vocational Education",
+        "employmentTerm": "",
+        "experienceLevel": "Junior",
+        "hoursPerWeek": 40,
+        "languages": [""]
+      },
+      "workingHours": {
+        "__typename": "VacancyWorkingHour",
+        "min": 32,
+        "max": 40
+      },
+      "tags": [""],
+      "recruiter": {
+        "__typename": "VacancyRecruiter",
+        "fullName": "Jannick Plantinga",
+        "email": "jannick@digitalradicals.nl",
+        "phone": "+31 0657660817",
+        "id": "00509000009hEj3AAE",
+        "avatar": "https://direct-impact.file.force.com/profilephoto/005/F"
+      },
+      "company": {
+        "__typename": "VacancyCompany",
+        "name": "Hidden Profits Marketing",
+        "companyType": "Scale-up"
+      }
+    },
+    {
+      "__typename": "Vacancy",
+      "_id": "64d2cda1c8db9c8c9a534ab3",
+      "jobId": "2023-00083",
+      "status": "In progress",
+      "priorityStatus": "",
+      "isDeleted": false,
+      "firstPublishedAt": {
+        "__typename": "VacancyFirstPublishedAt",
+        "timestamp": {
+          "__typename": "VacancyFirstPublishedAtTimestamp",
+          "t": 1675865470000,
+          "i": 1
+        }
+      },
+      "startingDate": {
+        "__typename": "VacancyStartingDate",
+        "timestamp": {
+          "__typename": "VacancyStartingDateTimestamp",
+          "t": 1677628800000,
+          "i": 1
+        }
+      },
+      "closingDate": {
+        "__typename": "VacancyClosingDate",
+        "timestamp": {
+          "__typename": "VacancyClosingDateTimestamp",
+          "t": 1690848000000,
+          "i": 1
+        }
+      },
+      "showWebsiteStartDate": {
+        "__typename": "VacancyShowWebsiteStartDate",
+        "timestamp": {
+          "__typename": "VacancyShowWebsiteStartDateTimestamp",
+          "t": 1676332800000,
+          "i": 1
+        }
+      },
+      "showWebsiteEndDate": {
+        "__typename": "VacancyShowWebsiteEndDate",
+        "timestamp": {
+          "__typename": "VacancyShowWebsiteEndDateTimestamp",
+          "t": null,
+          "i": null
+        }
+      },
+      "publicationId": "a0tJy000007ZA3hIAG",
+      "category": "",
+      "industry": "Marketing",
+      "function": "",
+      "functionGroup": "Content Marketing",
+      "sector": "E-commerce",
+      "topVacature": false,
+      "subCategory": "",
+      "title": "Brand Marketeer",
+      "intro": "<p>Ben jij een communicatief sterke en relationeel vaardige persoon? Vind je het leuk om relaties op te bouwen en heb je een passie voor branding en merkidentiteit? Lees dan snel verder!</p>",
+      "location": {
+        "__typename": "VacancyLocation",
+        "city": "Amsterdam",
+        "region": "North Holland",
+        "country": "Nederland",
+        "postalCode": "1018XA",
+        "address": "Weesperplein 4C"
+      },
+      "salary": {
+        "__typename": "VacancySalary",
+        "from": 3000,
+        "to": 3800,
+        "period": "Month"
+      },
+      "specs": {
+        "__typename": "VacancySpec",
+        "educationLevel": "Higher Vocational Education",
+        "employmentTerm": "",
+        "experienceLevel": "Junior",
+        "hoursPerWeek": 40,
+        "languages": [""]
+      },
+      "workingHours": {
+        "__typename": "VacancyWorkingHour",
+        "min": 32,
+        "max": 40
+      },
+      "tags": [""],
+      "recruiter": {
+        "__typename": "VacancyRecruiter",
+        "fullName": "Jetze Golbach",
+        "email": "jetze@digitalradicals.nl",
+        "phone": "",
+        "id": "00509000009kH8yAAE",
+        "avatar": "https://direct-impact.file.force.com/profilephoto/005/F"
+      },
+      "company": {
+        "__typename": "VacancyCompany",
+        "name": "Sijthoff Media",
+        "companyType": "Scale-up"
+      }
+    },
+    {
+      "__typename": "Vacancy",
+      "_id": "64d2cda1c8db9c8c9a534ab4",
+      "jobId": "2023-00101",
+      "status": "In progress",
+      "priorityStatus": "",
+      "isDeleted": false,
+      "firstPublishedAt": {
+        "__typename": "VacancyFirstPublishedAt",
+        "timestamp": {
+          "__typename": "VacancyFirstPublishedAtTimestamp",
+          "t": 1676557502000,
+          "i": 1
+        }
+      },
+      "startingDate": {
+        "__typename": "VacancyStartingDate",
+        "timestamp": {
+          "__typename": "VacancyStartingDateTimestamp",
+          "t": 1677628800000,
+          "i": 1
+        }
+      },
+      "closingDate": {
+        "__typename": "VacancyClosingDate",
+        "timestamp": {
+          "__typename": "VacancyClosingDateTimestamp",
+          "t": 1690848000000,
+          "i": 1
+        }
+      },
+      "showWebsiteStartDate": {
+        "__typename": "VacancyShowWebsiteStartDate",
+        "timestamp": {
+          "__typename": "VacancyShowWebsiteStartDateTimestamp",
+          "t": 1677369600000,
+          "i": 1
+        }
+      },
+      "showWebsiteEndDate": {
+        "__typename": "VacancyShowWebsiteEndDate",
+        "timestamp": {
+          "__typename": "VacancyShowWebsiteEndDateTimestamp",
+          "t": null,
+          "i": null
+        }
+      },
+      "publicationId": "a0tJy000007mOh5IAM",
+      "category": "",
+      "industry": "Marketing",
+      "function": "Conversion Optimization Specialist",
+      "functionGroup": "Digital Marketing",
+      "sector": "Retail",
+      "topVacature": false,
+      "subCategory": "",
+      "title": "CRO specialist",
+      "intro": "<p>Word onze conversie-optimalisatie held - CRO Specialist gezocht!</p>",
+      "location": {
+        "__typename": "VacancyLocation",
+        "city": "Wormerveer",
+        "region": "North Holland",
+        "country": "Nederland",
+        "postalCode": "1521 AX",
+        "address": "Zaandijkerweg 5"
+      },
+      "salary": {
+        "__typename": "VacancySalary",
+        "from": 3500,
+        "to": 4500,
+        "period": "Month"
+      },
+      "specs": {
+        "__typename": "VacancySpec",
+        "educationLevel": "Higher Vocational Education +",
+        "employmentTerm": "",
+        "experienceLevel": "Junior",
+        "hoursPerWeek": 40,
+        "languages": [""]
+      },
+      "workingHours": {
+        "__typename": "VacancyWorkingHour",
+        "min": 32,
+        "max": 40
+      },
+      "tags": [""],
+      "recruiter": {
+        "__typename": "VacancyRecruiter",
+        "fullName": "Martin Bekker",
+        "email": "martin@digitalradicals.nl",
+        "phone": "",
+        "id": "0050900000AWi4FAAT",
+        "avatar": "https://direct-impact.file.force.com/profilephoto/005/F"
+      },
+      "company": {
+        "__typename": "VacancyCompany",
+        "name": "Vanilia",
+        "companyType": "Corporate"
+      }
+    }
+  ],
+  "urlPath": "vacatures",
+  "index": "3W0ef1Xi1hLLK5pmzF0ghb",
+  "jobSpecsConfig": [
+    {
+      "specName": "region",
+      "specLabel": "Region",
+      "visibleOnDetail": false
+    },
+    {
+      "specName": "city",
+      "specLabel": "City",
+      "visibleOnDetail": true
+    },
+    {
+      "specName": "educationLevel",
+      "specLabel": "Opleidingsniveau",
+      "visibleOnDetail": true
+    },
+    {
+      "specName": "employmentTerm",
+      "specLabel": "Contractsoort",
+      "visibleOnDetail": false
+    },
+    {
+      "specName": "experienceLevel",
+      "specLabel": "Ervaring",
+      "visibleOnDetail": true
+    },
+    {
+      "specName": "hoursPerWeek",
+      "specLabel": "Uren per week",
+      "visibleOnDetail": true
+    },
+    {
+      "specName": "industry",
+      "specLabel": "Vakgebied",
+      "visibleOnDetail": true
+    },
+    {
+      "specName": "function",
+      "specLabel": "Functie",
+      "visibleOnDetail": false
+    },
+    {
+      "specName": "functionGroup",
+      "specLabel": "Functiegroep",
+      "visibleOnDetail": false
+    },
+    {
+      "specName": "sector",
+      "specLabel": "Sector",
+      "visibleOnDetail": false
+    },
+    {
+      "specName": "companyType",
+      "specLabel": "Type bedrijf",
+      "visibleOnDetail": false
+    },
+    {
+      "specName": "closingDate",
+      "specLabel": "Sluitingsdatum",
+      "visibleOnDetail": true
+    }
+  ],
+  "paginationRoutes": {
+    "nextPaginationUrl": "vacatures/1",
+    "prevPaginationUrl": false,
+    "paginationPage": null
+  },
+  "filterBlockData": [
+    {
+      "filterName": "region",
+      "filterLabel": "region",
+      "dropDownActive": true,
+      "categories": [
+        {
+          "name": "Groningen",
+          "numberOfJobs": 5,
+          "updateJobs": false
+        },
+        {
+          "name": "North Brabant",
+          "numberOfJobs": 2,
+          "updateJobs": false
+        },
+        {
+          "name": "North Holland",
+          "numberOfJobs": 9,
+          "updateJobs": false
+        },
+        {
+          "name": "Overijssel",
+          "numberOfJobs": 4,
+          "updateJobs": false
+        },
+        {
+          "name": "South Holland",
+          "numberOfJobs": 4,
+          "updateJobs": false
+        },
+        {
+          "name": "Utrecht",
+          "numberOfJobs": 10,
+          "updateJobs": false
+        },
+        {
+          "name": "undefined",
+          "numberOfJobs": 5,
+          "updateJobs": false
+        }
+      ]
+    },
+    {
+      "filterName": "industry",
+      "filterLabel": "industry",
+      "dropDownActive": true,
+      "categories": [
+        {
+          "name": "IT / Tech",
+          "numberOfJobs": 4,
+          "updateJobs": false
+        },
+        {
+          "name": "Marketing",
+          "numberOfJobs": 30,
+          "updateJobs": false
+        },
+        {
+          "name": "Sales",
+          "numberOfJobs": 3,
+          "updateJobs": false
+        },
+        {
+          "name": "Support",
+          "numberOfJobs": 2,
+          "updateJobs": false
+        }
+      ]
+    },
+    {
+      "filterName": "functionGroup",
+      "filterLabel": "functionGroup",
+      "dropDownActive": true,
+      "categories": [
+        {
+          "name": "Back-end Development",
+          "numberOfJobs": 1,
+          "updateJobs": false
+        },
+        {
+          "name": "Content Marketing",
+          "numberOfJobs": 4,
+          "updateJobs": false
+        },
+        {
+          "name": "Digital Marketing",
+          "numberOfJobs": 17,
+          "updateJobs": false
+        },
+        {
+          "name": "Front-end Development",
+          "numberOfJobs": 1,
+          "updateJobs": false
+        },
+        {
+          "name": "Marketing Automation",
+          "numberOfJobs": 5,
+          "updateJobs": false
+        },
+        {
+          "name": "Marketing Tech",
+          "numberOfJobs": 1,
+          "updateJobs": false
+        },
+        {
+          "name": "Online Marketing",
+          "numberOfJobs": 5,
+          "updateJobs": false
+        },
+        {
+          "name": "Support",
+          "numberOfJobs": 5,
+          "updateJobs": false
+        }
+      ]
+    },
+    {
+      "filterName": "function",
+      "filterLabel": "function",
+      "dropDownActive": true,
+      "categories": [
+        {
+          "name": "A/B Tester",
+          "numberOfJobs": 1,
+          "updateJobs": false
+        },
+        {
+          "name": "Business Developer",
+          "numberOfJobs": 1,
+          "updateJobs": false
+        },
+        {
+          "name": "Conversion Optimization Specialist",
+          "numberOfJobs": 4,
+          "updateJobs": false
+        },
+        {
+          "name": "Data Analyst",
+          "numberOfJobs": 1,
+          "updateJobs": false
+        },
+        {
+          "name": "Digital Marketeer",
+          "numberOfJobs": 3,
+          "updateJobs": false
+        },
+        {
+          "name": "Engineer",
+          "numberOfJobs": 2,
+          "updateJobs": false
+        },
+        {
+          "name": "Full Stack Developer",
+          "numberOfJobs": 1,
+          "updateJobs": false
+        },
+        {
+          "name": "Online Marketeer",
+          "numberOfJobs": 1,
+          "updateJobs": false
+        },
+        {
+          "name": "Recruiter",
+          "numberOfJobs": 1,
+          "updateJobs": false
+        },
+        {
+          "name": "SEA Marketeer",
+          "numberOfJobs": 2,
+          "updateJobs": false
+        },
+        {
+          "name": "undefined",
+          "numberOfJobs": 22,
+          "updateJobs": false
+        }
+      ]
+    },
+    {
+      "filterName": "experienceLevel",
+      "filterLabel": "experienceLevel",
+      "dropDownActive": true,
+      "categories": [
+        {
+          "name": "Junior",
+          "numberOfJobs": 11,
+          "updateJobs": false
+        },
+        {
+          "name": "Medior",
+          "numberOfJobs": 16,
+          "updateJobs": false
+        },
+        {
+          "name": "Senior",
+          "numberOfJobs": 2,
+          "updateJobs": false
+        },
+        {
+          "name": "Starter",
+          "numberOfJobs": 10,
+          "updateJobs": false
+        }
+      ]
+    },
+    {
+      "filterName": "educationLevel",
+      "filterLabel": "educationLevel",
+      "dropDownActive": true,
+      "categories": [
+        {
+          "name": "Academic Education",
+          "numberOfJobs": 1,
+          "updateJobs": false
+        },
+        {
+          "name": "Academic Education master",
+          "numberOfJobs": 1,
+          "updateJobs": false
+        },
+        {
+          "name": "Higher Vocational Education",
+          "numberOfJobs": 26,
+          "updateJobs": false
+        },
+        {
+          "name": "Higher Vocational Education +",
+          "numberOfJobs": 10,
+          "updateJobs": false
+        },
+        {
+          "name": "undefined",
+          "numberOfJobs": 1,
+          "updateJobs": false
+        }
+      ]
+    }
+  ]
+}

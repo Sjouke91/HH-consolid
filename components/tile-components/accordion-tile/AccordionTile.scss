@@ -1,0 +1,39 @@
+.c-accordion-tile {
+  &__title {
+    display: flex;
+    align-items: center;
+    padding: 16px 14px;
+    border-bottom: 1px solid $c-secondary;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    word-break: break-word;
+    hyphens: auto;
+    text-transform: unset !important;
+
+    &::after {
+      content: '';
+      display: flex;
+      margin-left: auto;
+      width: 26px;
+      height: 12px;
+      min-width: 26px;
+      min-height: 12px;
+      background: url(/circle8-list-arrow.svg) center center no-repeat;
+      background-size: contain;
+
+      transform: rotate(-90deg);
+      transition: transform 200ms ease-in-out;
+    }
+    &.show-body::after {
+      transform: rotate(0deg);
+    }
+  }
+  &__body-text {
+    padding: 32px 24px;
+    p {
+      min-height: 16px;
+    }
+  }
+}

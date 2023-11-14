@@ -1,0 +1,25 @@
+.c-slider-filter {
+  &__wrapper {
+    // padding: 1rem;
+  }
+  &__label {
+    // padding: 1rem;
+    color: $c-text;
+    padding: 0;
+    margin: 0;
+    padding-top: 8px;
+  }
+  &__slider {
+    padding: 0.8rem 12px;
+  }
+  &__button {
+    margin-top: 32px;
+    width: 100%;
+    &--disabled {
+      pointer-events: none;
+      opacity: 0;
+      cursor: disabled;
+      max-height: 0;
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.c-team-tile {
+  &__tile-wrapper {
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+    background: $c-primary;
+    overflow: hidden;
+  }
+  &__image-container {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex: 1;
+  }
+  &__image {
+    min-height: 100%;
+    min-width: 100%;
+    height: auto;
+    width: auto;
+    z-index: 0;
+    object-fit: cover;
+  }
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    gap: 24px;
+  }
+  &__title {
+    color: $c-white;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    word-break: break-word;
+    hyphens: auto;
+  }
+  &__subtitle {
+    color: $c-quaternary;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 4px;
+  }
+  &__contact {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: $c-white !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 24px !important;
+
+
+    &:hover {
+      color: $c-primary !important;
+    }
+
+    &::before {
+      content: '';
+      display: flex;
+      min-width: 20px;
+      height: 20px;
+      mask-size: contain;
+      -webkit-mask-size: contain;
+      mask-repeat: no-repeat;
+      background: $c-quaternary;
+    }
+    &.email::before {
+      mask-image: url(/circle8-email.svg);
+    }
+    &.phone::before {
+      mask-image: url(/circle8-phone.svg);
+    }
+  }
+  &__socials-container {
+    display: flex;
+    gap: 16px;
+    margin-top: 8px;
+  }
+  &__socials {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    background: $c-secondary;
+
+    &:hover {
+      background: $c-primary;
+    }
+    &.facebook {
+      mask-image: url(/circle8-facebook.svg);
+    }
+    &.linkedin {
+      mask-image: url(/circle8-linkedin.svg);
+    }
+    &.twitter {
+      mask-image: url(/circle8-twitter.svg);
+    }
+  }
+}

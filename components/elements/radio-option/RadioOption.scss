@@ -1,0 +1,12 @@
+.c-radio-option {
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  &__label {
+    margin: 0;
+    font-weight: 300;
+    text-transform: none;
+  }
+}

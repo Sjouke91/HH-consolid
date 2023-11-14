@@ -1,0 +1,25 @@
+@import '../abstracts';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: $c-white;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid rgb(218, 218, 218);
+
+  *:not(button):not(.show-as-button):not(.text-high-light, button):not(
+      .show-as-button
+    ) {
+    color: $c-text;
+  }
+}
+
+a.card {
+  &:hover {
+    border: 1px solid red;
+    box-shadow: 0 20px 40px -14px rgba(255, 0, 0, 0.25);
+  }
+}

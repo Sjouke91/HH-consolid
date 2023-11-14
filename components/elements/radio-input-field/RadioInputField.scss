@@ -1,0 +1,11 @@
+.c-radio-field {
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__option-container {
+    display: flex;
+    gap: 8px;
+  }
+}

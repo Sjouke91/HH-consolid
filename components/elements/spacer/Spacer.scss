@@ -1,0 +1,7 @@
+.c-spacer {
+  &__title {
+    &.--full-width-input {
+      grid-column: 1/3;
+    }
+  }
+}

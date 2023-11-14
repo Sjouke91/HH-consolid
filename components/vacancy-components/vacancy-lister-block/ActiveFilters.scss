@@ -1,0 +1,49 @@
+.c-active-filters {
+  * {
+    color: inherit;
+  }
+  &__wrapper {
+    // background: white;
+  }
+  &__title {
+    color: $c-text;
+  }
+  &__actions {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+  &__item {
+    padding: 10px;
+    border-radius: 6px;
+    background: $c-background-quaternary;
+    height: fit-content;
+    &::after {
+      content: 'x';
+      font-weight: bold;
+
+      display: inline-block;
+      margin-left: 1rem;
+    }
+  }
+  &__reset {
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    &::after {
+      content: '';
+      position: relative;
+      width: 30px;
+      height: 15px;
+      mask-image: url('/circle8-trash.svg');
+      mask-repeat: no-repeat;
+      background-color: $c-primary;
+      display: inline-block;
+      margin-left: 0.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

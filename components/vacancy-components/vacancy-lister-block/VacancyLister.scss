@@ -1,0 +1,173 @@
+.c-vacancy-lister {
+  // These variables are to make sure we use the same amounts for all the indentation & radius across components in the lister.
+
+  // See usage searching for var(--vacancy-lister-filter-indentation).
+
+  // Note this variables are not scoped, so resetting it would change all the components and the latest would prevail. SO DO NOT REUSE THIS VARIABLE NAME IN OTHER COMPONENTS, CREATE A NEW ONE, namespaced for your usecase, like these have a prefix with --vacancy-lister-name-of-your-variable
+
+  --vacancy-lister-filter-indentation: 0.7rem;
+  --vacancy-lister-border-radius: 1.2rem;
+  --vacancy-lister-border-radius-small: 0.3rem;
+
+  background: $c-background-secondary;
+  position: relative;
+  padding: 5rem 1rem;
+  @media screen and (max-width: $bp-tablet) {
+    flex-direction: column-reverse;
+    padding: 2.5rem 1rem;
+  }
+  &__inner-wrapper {
+    max-width: $content-width;
+    margin: auto;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    @media screen and (max-width: $bp-tablet) {
+      flex-direction: column-reverse;
+    }
+  }
+  &__left-bar {
+    flex-basis: 350px;
+    @media screen and (max-width: $bp-tablet) {
+      flex-basis: 100%;
+      position: sticky;
+      display: block;
+      top: unset;
+      z-index: 2;
+      bottom: 0;
+      > *:not(button) {
+        overflow-y: auto;
+        position: fixed;
+        bottom: 0;
+        left: auto;
+        right: 0rem;
+        top: 2rem;
+        // display: none;
+        opacity: 0;
+        width: 0;
+        transition: 0.3s;
+      }
+    }
+
+    &--is-open {
+      // top: 1rem;
+      > *:not(button) {
+        @media screen and (max-width: $bp-tablet) {
+          display: block;
+          // left: 2rem;
+          right: 0rem;
+          // display: none;
+          box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.7);
+          opacity: 1;
+          width: 90%;
+          transition: 0.3s;
+          top: 5rem;
+        }
+      }
+    }
+    .mobile-toggler {
+      // position: sticky;
+      // bottom: 1rem;
+      // padding: 0.4rem 1rem;
+      display: block;
+      margin: auto;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      @media screen and (min-width: $bp-tablet) {
+        display: none;
+      }
+    }
+  }
+  &__right-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-basis: 900px;
+  }
+
+  &__filter-sorting {
+    display: flex;
+    width: 100%;
+
+    @media screen and (max-width: $bp-tablet) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__sorting-container {
+    flex-direction: column;
+    gap: 6px;
+    margin-left: auto;
+    align-items: flex-start;
+
+    &[data-type='mobile'] {
+      display: none;
+      margin-left: unset;
+      align-items: flex-start;
+      margin-top: 10px;
+    }
+
+    &[data-type='desktop'] {
+      display: flex;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      &[data-type='mobile'] {
+        display: flex;
+      }
+      &[data-type='desktop'] {
+        display: none;
+      }
+    }
+  }
+
+  &__sorting-title {
+  }
+
+  &__sorting-menu-container {
+    position: relative;
+    @media screen and (max-width: $bp-mobile) {
+      width: 100%;
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 1rem;
+      height: 1rem;
+      mask-image: url('/circle8-arrow-down.svg');
+      mask-repeat: no-repeat;
+      background-color: $c-primary;
+      border-top: 2px solid $c-white;
+      border-right: 2px solid $c-white;
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+  }
+
+  //<select>
+  &__sorting-menu {
+    padding-left: 20px;
+    position: relative;
+    padding-right: 40px;
+
+    @media screen and (max-width: $bp-mobile) {
+      width: 100%;
+      padding-left: 5px;
+    }
+  }
+  &__title-container {
+    margin-bottom: 40px;
+
+    @media screen and (max-width: $bp-mobile) {
+      margin-bottom: unset;
+    }
+  }
+  &__title {
+    text-align: center;
+  }
+}

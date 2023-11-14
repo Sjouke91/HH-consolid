@@ -1,0 +1,31 @@
+.c-article-template {
+}
+
+.c-article-paragraph {
+  &__outer-wrapper {
+  }
+  &__inner-wrapper {
+  }
+  &__body-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    h3 {
+      text-transform: unset;
+      font-weight: 600;
+    }
+
+    h3:not(:first-of-type) {
+      margin-top: 16px;
+    }
+
+    p {
+      line-height: 24px; /* 150% */
+      letter-spacing: -0.4px;
+    }
+    ul {
+      margin-bottom: unset;
+    }
+  }
+}

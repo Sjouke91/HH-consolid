@@ -1,0 +1,205 @@
+.c-carousel-container {
+  &__outer-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+
+    --slide-spacing: 32px;
+    --slide-height: fit-content;
+    position: relative;
+
+    //default 3 columns
+    --slide-size: calc(100% / 3);
+
+    &.col-3 {
+      --slide-size: calc(100% / 3);
+    }
+    &.col-4 {
+      --slide-size: calc(100% / 4);
+    }
+    &.col-5 {
+      --slide-size: calc(100% / 5);
+    }
+    &.col-6 {
+      --slide-size: calc(100% / 6);
+    }
+
+    @media (max-width: $bp-tablet) {
+      --slide-size: calc(100% / 2);
+    }
+    @media (max-width: $bp-mobile) {
+      --slide-size: calc(100% / 1);
+    }
+
+    background-repeat: no-repeat;
+    &.alignment-left-top {
+      background-position: top left;
+    }
+    &.alignment-left-center {
+      background-position: center left;
+    }
+    &.alignment-left-bottom {
+      background-position: bottom left;
+    }
+    &.alignment-right-top {
+      background-position: top right;
+    }
+    &.alignment-right-center {
+      background-position: center right;
+    }
+    &.alignment-right-bottom {
+      background-position: bottom right;
+    }
+  }
+  &__inner-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__content-wrapper {
+    margin-bottom: 48px;
+    max-width: $content-width;
+  }
+  &__subtitle {
+    text-align: center;
+  }
+  &__title {
+    text-align: center;
+    word-break: break-word;
+    hyphens: auto;
+  }
+  &__rich-text {
+    margin-top: 24px;
+  }
+  &__carousel-wrapper {
+    overflow: hidden;
+    max-width: $content-width;
+    width: 100%;
+  }
+
+  &__wrapper-button {
+    position: relative;
+    max-width: $content-width;
+    width: 100%;
+
+    .button-left,
+    .button-right {
+      button {
+        min-width: unset;
+        width: auto;
+      }
+    }
+
+    .button-left {
+      position: absolute;
+      left: -4rem;
+      top: 50%;
+    }
+
+    .button-right {
+      position: absolute;
+      right: -3rem;
+      top: 50%;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      overflow: hidden;
+    }
+  }
+  &__carousel-container {
+    backface-visibility: hidden;
+    display: flex;
+    touch-action: pan-y;
+    margin-left: calc(var(--slide-spacing) * -1);
+  }
+  &__carousel-slide {
+    flex: 0 0 var(--slide-size);
+    min-width: 0;
+    padding-left: var(--slide-spacing);
+    position: relative;
+
+    .tile-wrapper {
+      display: block;
+      // height: var(--slide-height);
+      width: 100%;
+    }
+
+    @media (max-width: $bp-tablet) {
+      flex: 0 0 var(--slide-size);
+      min-width: 100%;
+      padding-left: var(--slide-spacing);
+      position: relative;
+      display: flex;
+      height: 100%;
+    }
+  }
+  &__dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__dot {
+    -webkit-appearance: none;
+    background-color: transparent;
+    touch-action: manipulation;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 1.2rem;
+    height: 2.4rem;
+    display: flex;
+    align-items: center;
+    min-width: unset;
+
+    &:after {
+      content: '';
+      background: $c-white;
+      border-radius: 0.5rem;
+      width: 100%;
+      width: 10px;
+      height: 10px;
+      outline: 1px solid $c-primary;
+    }
+
+    &--selected:after {
+      background: $c-primary;
+    }
+  }
+  &__button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.embla__button {
+  position: absolute;
+  top: 50%;
+  -webkit-appearance: none;
+  background-color: transparent;
+  touch-action: manipulation;
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  width: 4rem;
+  height: 4rem;
+  &--prev {
+    // left: 20px;
+  }
+  &--next {
+    // right: 20px;
+  }
+}
+.embla__button:disabled {
+  opacity: 0.3;
+}
+.embla__button__svg {
+  // width: 65%;
+  // height: 65%;
+}

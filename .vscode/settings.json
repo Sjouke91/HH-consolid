@@ -1,0 +1,13 @@
+{
+  "prettier.requireConfig": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.tabSize": 2,
+  "prettier.tabWidth": 2,
+  "prettier.enableDebugLogs": true,
+  "[javascriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

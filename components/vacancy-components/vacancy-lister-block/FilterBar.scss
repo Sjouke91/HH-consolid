@@ -1,0 +1,37 @@
+.c-filter-bar {
+  * {
+    color: inherit;
+    text-transform: unset;
+  }
+  &__wrapper {
+    background: white;
+    padding: 2rem 1rem;
+    border-radius: var(--vacancy-lister-border-radius);
+    @media screen and (max-width: $bp-tablet) {
+      border-radius: 0;
+      padding-bottom: 3rem;
+    }
+  }
+  &__title {
+    color: $c-text;
+  }
+  &__mobile-toggler {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    // transform: translateX(-50%);
+
+    // This horrible looking code below means that the class is rendered twice, therefore adds specificity to the selector due to its repetition
+    // As in .c-filter-bar__mobile-toggler.c-filter-bar__mobile-toggler
+    &#{&} {
+      padding: 0.6rem 1.3rem;
+      margin: auto;
+    }
+    width: fit-content;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
+    }
+  }
+}

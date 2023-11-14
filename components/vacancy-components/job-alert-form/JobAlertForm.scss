@@ -1,0 +1,119 @@
+.c-job-alert-form {
+  &__outer-wrapper {
+    height: fit-content;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    border-radius: 24px;
+    &.primary {
+      background-color: $c-quaternary !important;
+    }
+  }
+  &__content-container {
+    width: 100%;
+    display: inline-flex;
+    gap: 10px;
+    @media (max-width: 740px) {
+      flex-direction: column;
+    }
+  }
+
+  //main toggle wrapper
+  &__toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 35px;
+
+    &--checkbox {
+      opacity: 0;
+      width: 0;
+      height: 0;
+
+      //button background in checked status
+      &.checked + .c-job-alert-form__toggle--slider {
+        background-color: $c-primary;
+      }
+
+      //button in checked status
+      &.checked + .c-job-alert-form__toggle--slider:before {
+        background-color: $c-white;
+        -webkit-transform: translateX(24px);
+        -ms-transform: translateX(24px);
+        transform: translateX(24px);
+      }
+    }
+
+    //inner-region
+    &--slider {
+      position: absolute;
+
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $c-quaternary;
+      border: 2px solid $c-primary;
+      border-radius: 40px;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+
+      //button icon
+      &:before {
+        position: absolute;
+        content: '';
+        height: 24px;
+        width: 24px;
+        left: 4px;
+        bottom: 3px;
+        background-color: $c-primary;
+        border-radius: 50%;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+    }
+  }
+  &__text-container {
+    @media (max-width: 1300px) {
+      max-width: 600px;
+    }
+  }
+  &__title {
+    color: $c-text;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 4px;
+    word-break: break-word;
+    hyphens: auto;
+  }
+  &__subtitle {
+    color: $c-secondary !important;
+  }
+  &__body-text p {
+    color: $c-secondary;
+  }
+  &__form-container {
+    padding-top: 15px;
+    padding-left: 70px;
+    padding-bottom: 15px;
+
+    fieldset {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-width: 400px;
+      label {
+        color: $c-secondary;
+      }
+    }
+    .c-text-field__file_notice {
+      color: $c-white;
+    }
+  }
+
+  &__submit-button {
+    border-width: 1px !important;
+  }
+}

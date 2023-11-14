@@ -1,0 +1,95 @@
+//------ PRE HEADER -------//
+
+.c-pre-header {
+  &__outer-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: $bp-mobile) {
+      justify-content: unset;
+      padding: 24px !important;
+    }
+  }
+  &__inner-wrapper {
+    max-width: $content-width;
+    display: flex;
+    width: 100%;
+    padding-right: 2rem;
+
+    @media (max-width: $bp-tablet) {
+      margin-right: 16px;
+      flex-direction: column;
+      width: 100%;
+      padding-right: unset;
+    }
+
+    @media (max-width: $bp-mobile) {
+      flex-direction: row;
+      width: unset;
+      height: 100%;
+      gap: unset;
+      align-items: center;
+    }
+  }
+
+  &__menu-items {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+
+    @media screen and (max-width: $bp-tablet) {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: unset;
+    }
+  }
+
+  &__menu-item {
+    padding: 16px 16px !important;
+    color: $c-text-inverse !important;
+
+    &:hover {
+      color: $c-primary !important;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      padding-top: 8px !important;
+      padding-bottom: 8px !important;
+    }
+  }
+  &__menu-item-container {
+    background-color: $c-black;
+  }
+  &__menu-item-content-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  &__menu-item {
+    padding: 0 !important;
+
+    &.linkedin::before {
+      content: '';
+      display: flex;
+      width: 30px;
+      height: 39px;
+      padding-left: 16px;
+      background: url(/circle8-linkedin-icon.svg) no-repeat;
+    }
+
+    &.linkedin:hover::before {
+      content: '';
+      display: flex;
+      width: 30px;
+      height: 39px;
+      padding-left: 16px;
+      background: url(/circle8-light-blue-linkedin-icon.svg) no-repeat;
+    }
+  }
+}

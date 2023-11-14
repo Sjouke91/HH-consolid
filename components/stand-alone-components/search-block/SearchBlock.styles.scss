@@ -1,0 +1,110 @@
+.c-search-block {
+  &__outer-wrapper {
+  }
+
+  &__inner-wrapper {
+    max-width: 700px;
+    padding-top: 100px;
+
+    & .search-block-button {
+      border-radius: 4px;
+      flex: 1;
+      margin-right: 5px;
+      color: $c-white !important;
+
+      @media screen and (max-width: $bp-tablet) {
+        flex: 1;
+      }
+      @media (max-width: $bp-mobile) {
+        position: absolute;
+        top: 64px;
+      }
+    }
+
+    & .c-text-field__container {
+      flex: 3;
+    }
+
+    p,
+    h5,
+    h2,
+    h3,
+    h4 {
+      color: inherit;
+    }
+  }
+
+  &__text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: $c-secondary;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  &__subtitle {
+    // width: 100%;
+    color: $c-secondary;
+  }
+
+  &__body-text {
+    color: $c-secondary;
+  }
+
+  &__input-form {
+    display: flex;
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  &__input-fields {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    align-items: center;
+    border-radius: 8px;
+    background-color: white;
+    padding: 5px 0px;
+    position: relative;
+
+    label {
+      display: none;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:hover {
+      box-shadow: none;
+    }
+
+    input {
+      position: relative;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      color: $c-text !important;
+      margin-left: 8px;
+      @media screen and (max-width: $bp-mobile) {
+        margin-left: 0px;
+        width: 97%;
+        align-self: center;
+      }
+    }
+  }
+
+  &__btn-icon {
+    margin-right: 10px;
+  }
+
+  &__additional-buttons {
+    margin-top: 2rem;
+  }
+}

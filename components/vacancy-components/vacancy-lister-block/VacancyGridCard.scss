@@ -1,0 +1,159 @@
+.c-vacancy-grid-card {
+  * {
+    color: $c-text;
+  }
+  &__wrapper {
+    padding: 2rem 2rem;
+    background: $c-white;
+    border-radius: var(--vacancy-lister-border-radius);
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    gap: 23px;
+    position: relative;
+    &--left {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    &--right {
+      position: absolute;
+      right: 0;
+    }
+  }
+  &__badge {
+    &-container {
+      display: inline-flex;
+      gap: 15px;
+      margin-bottom: 8px;
+    }
+    &--new {
+      width: fit-content;
+      padding: 6px 12px;
+      border-radius: 4px;
+      background: $c-quaternary;
+      color: $c-primary;
+      box-shadow: 0px 8px 16px 0px rgba(10, 10, 10, 0.15);
+    }
+  }
+  &__title {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+    color: $c-text;
+  }
+
+  &__worktype {
+    @media screen and (max-width: $bp-mobile) {
+      display: none;
+    }
+  }
+
+  &__id {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgba(17, 45, 99, 0.6);
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 14px;
+    }
+  }
+  &__usp-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    svg {
+      * {
+        fill: $c-primary;
+      }
+    }
+  }
+  &__usp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5px;
+
+    &:not(:last-child) {
+      padding-right: 20px;
+      border-right: 2px solid $c-secondary;
+
+      @media (max-width: $bp-mobile) {
+        border-right: none;
+      }
+    }
+    h5 {
+      font-weight: 500;
+      line-height: 20px;
+      @media (max-width: $bp-mobile) {
+        font-size: 16px;
+      }
+    }
+  }
+  &__usp-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+
+    path {
+      fill: $c-quaternary;
+    }
+    h5 {
+      color: $c-quaternary;
+    }
+  }
+  &__description {
+    line-height: 24px;
+    color: $c-text;
+  }
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+    button {
+      padding: 12px 24px;
+      min-width: auto !important;
+      color: $c-text;
+    }
+
+    @media (max-width: $bp-tablet) {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      //every direct child of the footer div
+      & > * {
+        width: inherit;
+        text-align: center;
+      }
+
+      //direct button child of footer div with link class
+      & > button.link {
+        &::after {
+          right: unset;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+
+  &__apply-btn {
+    background-color: $c-secondary !important;
+    border-radius: 15px;
+    color: $c-white !important;
+    padding: 12px 24px;
+    line-height: 24px;
+
+    &:hover {
+      background-color: $c-primary !important;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}

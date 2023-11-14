@@ -1,0 +1,8 @@
+.c-validator {
+  &__error-message {
+    color: $c-error !important;
+    padding-top: 4px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+}

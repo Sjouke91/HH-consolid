@@ -1,0 +1,14 @@
+.c-lister-pagination {
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin: 0 auto;
+  }
+  &__page {
+    border: 2px solid $c-secondary;
+    padding: 1rem;
+    display: block;
+    border-radius: 7.5px;
+  }
+}

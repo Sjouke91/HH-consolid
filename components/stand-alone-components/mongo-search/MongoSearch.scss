@@ -1,0 +1,241 @@
+.c-mongo-search {
+  &__outer-wrapper {
+    position: relative;
+    padding: 0px 16px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: $c-background-secondary;
+
+    .--nav-disabled {
+      pointer-events: none;
+      cursor: not-allowed;
+      background-color: grey !important;
+    }
+  }
+
+  &__no-results {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__no-result-message {
+    width: 60%;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    min-height: 300px;
+
+    h2 {
+      color: $c-secondary;
+    }
+  }
+
+  &__inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: $content-width;
+    width: 100%;
+    position: relative;
+
+    .c-vacancy-lister {
+    }
+
+    .c-filter-bar__wrapper {
+    }
+  }
+
+  &__stats {
+    margin-top: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: $c-primary;
+    padding: 1rem 2.5rem;
+
+    p {
+      margin-bottom: 0px;
+      font-family: $font-primary !important;
+      color: $c-white;
+    }
+
+    strong {
+      font-family: $font-primary !important;
+      font-weight: 700;
+      color: $c-white;
+    }
+  }
+
+  &__loading-container {
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__pages-container {
+    display: flex;
+    padding-bottom: 40px;
+    flex-direction: column;
+    gap: 10px;
+
+    @media screen and (max-width: $bp-mobile) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+  &__page-result-heading {
+    margin-top: 5px;
+    font-family: $font-primary;
+    padding-top: 62px;
+    padding-bottom: 32px;
+  }
+
+  &__page-result-container {
+    background-color: white;
+    cursor: pointer;
+    animation-name: fade-in;
+    animation-duration: 800ms;
+    animation-timing-function: ease-in-out;
+    transition:
+      200ms border-color ease-in,
+      200ms transform ease-in;
+
+    &:hover {
+      border-color: $c-primary;
+      background-color: $c-background-primary;
+      transition:
+        200ms border-color ease-in,
+        200ms transform ease-in,
+        200ms background-color ease-in;
+    }
+
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__page-result-card {
+    height: 100%;
+    width: 100%;
+    padding: 3rem 2rem 3rem 2rem;
+    padding: 24px 0px 24px 32px;
+    background-color: $c-primary;
+    border: 2px solid transparent;
+    border-radius: 8px;
+
+    h5 {
+      font-size: 12px;
+      color: $c-white;
+    }
+
+    p {
+      font-family: $font-primary;
+      font-weight: 500;
+      font-size: 20px;
+      color: $c-white;
+    }
+
+    &:hover {
+      background-color: $c-white;
+      border: 2px solid $c-primary;
+
+      p {
+        color: $c-primary;
+      }
+    }
+  }
+
+  &__page-title {
+    font-weight: 700 !important;
+    font-family: $font-primary !important;
+    letter-spacing: 0.05em;
+    font-size: 16px !important;
+  }
+
+  &__meta-description {
+    text-transform: unset !important;
+    font-size: 24px !important;
+    letter-spacing: -0.02em;
+    font-family: $font-primary !important;
+  }
+
+  &__page-count {
+    align-self: flex-end;
+  }
+
+  &__pagination-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 10px;
+    border-top: 1px solid #eaecf0;
+
+    @media screen and (max-width: $bp-mobile) {
+      flex-direction: row;
+    }
+
+    & .button-container-search {
+      display: flex;
+      position: relative;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      height: 100%;
+
+      @media screen and (max-width: $bp-mobile) {
+        gap: 5px;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+
+      & .pagination-status {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @media screen and (max-width: $bp-mobile) {
+          position: unset;
+          left: unset;
+          transform: unset;
+
+          p {
+            font-size: 12px !important;
+          }
+        }
+      }
+
+      & .page-next {
+        margin-left: auto;
+        @media screen and (max-width: $bp-mobile) {
+          margin-left: unset;
+        }
+      }
+
+      & .page-prev {
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+
+  &__button {
+    margin: 8px 0;
+  }
+}

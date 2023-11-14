@@ -1,0 +1,48 @@
+.c-filter-search {
+  &__wrapper {
+    position: relative;
+    overflow: hidden;
+    padding: 4px 2px;
+    margin: 14px 0 6px;
+  }
+  &__input {
+    width: 100%;
+    border: 2px solid $c-text;
+    border-radius: 15px;
+    padding-left: 32px;
+    position: relative;
+    color: $c-secondary;
+    height: 3rem !important;
+  }
+  &__label {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 12px;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    line-height: 100%;
+  }
+  &__button {
+    background: $c-primary;
+    position: absolute;
+    color: $c-white;
+    right: 6px;
+    top: 8px;
+    bottom: 8px;
+    border-radius: 15px;
+    transform: translateX(0%);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    padding: 8px 24px;
+    overflow: hidden;
+    &--disabled {
+      transform: translateX(100%);
+      pointer-events: none;
+      opacity: 0;
+    }
+  }
+}

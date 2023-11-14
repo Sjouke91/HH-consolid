@@ -1,0 +1,8 @@
+// NOTE(Fran): outputs the contrasting color the input, black -> white
+@function contrast($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}

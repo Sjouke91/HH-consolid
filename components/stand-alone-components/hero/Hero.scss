@@ -1,0 +1,106 @@
+.c-hero {
+  &__outer-wrapper {
+    position: relative;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-color: $c-primary !important;
+    min-height: 415px;
+    * {
+      color: $c-text-inverse;
+    }
+
+    @media (max-width: $bp-mobile) {
+      min-height: 315px;
+    }
+    &.alignment-left-top {
+      background-position: top left;
+    }
+    &.alignment-left-center {
+      background-position: center left;
+    }
+    &.alignment-left-bottom {
+      background-position: bottom left;
+    }
+    &.alignment-right-top {
+      background-position: top right;
+    }
+    &.alignment-right-center {
+      background-position: center right;
+    }
+    &.alignment-right-bottom {
+      background-position: bottom right;
+    }
+  }
+  &__inner-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media (max-width: $bp-tablet) {
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+  }
+  &__image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    @media (max-width: $bp-tablet) {
+      position: absolute;
+      inset: 0;
+    }
+  }
+  &__image {
+    min-height: 100%;
+    min-width: 100%;
+    height: auto;
+    width: 100%;
+    z-index: 0;
+    max-height: 600px;
+    object-fit: cover;
+    @media (max-width: $bp-mobile) {
+      max-height: unset;
+    }
+  }
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+    gap: 24px;
+    padding: 40px 16px;
+    min-width: 50%;
+
+    @media (max-width: $bp-tablet) {
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+      background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0)
+      );
+    }
+  }
+  &__title {
+    word-break: break-word;
+    hyphens: auto;
+  }
+  &__body-text {
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  &__button {
+    @media (max-width: $bp-mobile) {
+      width: 100%;
+    }
+  }
+}

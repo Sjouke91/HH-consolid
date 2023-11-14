@@ -1,0 +1,75 @@
+.c-checkbox {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    &.--full-width-input {
+      grid-column: 1/3;
+
+      textarea {
+        height: 100%;
+        border-radius: 30px;
+        color: $c-secondary;
+      }
+    }
+    @media (max-width: $bp-tablet) {
+      padding: 8px;
+    }
+  }
+
+  &__label {
+    margin: 0;
+    font-weight: 500 !important;
+    text-transform: none;
+  }
+
+  &__policy {
+    display: flex;
+    font-size: 17px;
+    font-weight: 300 !important;
+    margin: 0;
+
+    * {
+      color: $c-text;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+
+    &::before {
+      content: '';
+      display: flex;
+      width: 40px;
+      height: 22px;
+      background: url(/circle8-check-box-outline.svg) no-repeat;
+      padding-right: 10px;
+    }
+
+    &.unchecked::before {
+      background: $c-primary;
+      mask-image: url(/circle8-check-box-outline.svg);
+      mask-repeat: no-repeat;
+    }
+  }
+
+  &__input {
+    display: none;
+  }
+  &__input:checked + label {
+    &::before {
+      background: url(/circle8-check-box-filled.svg) no-repeat;
+    }
+  }
+
+  &__policy-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    @media (max-width: $bp-tablet) {
+      gap: 10px;
+    }
+  }
+}

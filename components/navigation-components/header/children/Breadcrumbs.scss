@@ -1,0 +1,49 @@
+.c-breadcrumbs {
+  &__outer-wrapper {
+    position: absolute;
+    top: 140px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 16px;
+    z-index: 100;
+    @media (max-width: $bp-tablet) {
+      display: none;
+    }
+  }
+  &__inner-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    max-width: $content-width;
+  }
+  &__breadcrumb-item {
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    text-transform: capitalize;
+
+    a {
+      color: $c-white;
+    }
+    &:hover a {
+      text-decoration: underline;
+    }
+    &:not(:last-child)::after {
+      content: '';
+      display: inline-block;
+      mask-size: cover;
+      -webkit-mask-size: cover;
+      background: $c-white;
+      mask-image: url(/circle8-breadcrumb-chevron.svg);
+      height: 14px;
+      width: 8px;
+      margin-left: 20px;
+    }
+    span {
+      color: $c-quaternary;
+    }
+  }
+}

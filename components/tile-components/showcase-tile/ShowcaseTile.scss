@@ -1,0 +1,23 @@
+.c-showcase-tile {
+  &__tile-wrapper {
+    height: 100%;
+  }
+  &__image-container {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__image {
+    width: 100%;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    z-index: 0;
+    object-fit: cover;
+  }
+}

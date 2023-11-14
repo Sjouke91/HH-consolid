@@ -1,0 +1,113 @@
+.c-application-form {
+  &__outer-wrapper {
+    background-color: $c-background-primary;
+    margin-top: 120px;
+    @media (max-width: $bp-mobile) {
+      padding: 0;
+      border-radius: 0;
+      margin-top: 0px;
+
+    }
+  }
+
+  &__inner-wrapper {
+    background-color: $c-background-quaternary;
+    padding: 40px 280px;
+    @media (max-width: $bp-tablet) {
+      padding: 16px;
+    }
+    @media (max-width: $bp-mobile) {
+      margin-top: 0;
+      border-radius: 0;
+    }
+  }
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  &__subtitle {
+    // font-size: 20px;
+    font-style: normal;
+    font-weight: 500 !important;
+    line-height: 22px;
+    letter-spacing: -0.5px;
+  }
+
+  &__form-container {
+    fieldset {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+
+      input::placeholder {
+      }
+
+      @media (max-width: $bp-tablet) {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+    }
+
+    fieldset > div:last-child {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__submit-button {
+    box-shadow: 0px 8px 16px 0px rgba(10, 10, 10, 0.15);
+
+    @media (max-width: $bp-tablet) {
+      width: 100%;
+    }
+  }
+
+  &__select-label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: $c-text-inverse;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 16px;
+      bottom: 18px;
+      display: flex;
+      background: url('/circle8-arrow-down.svg') center center no-repeat;
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &__select {
+    margin-top: 8px;
+
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+
+    display: flex;
+
+    option {
+      // display: none;
+      width: 100%;
+    }
+  }
+  &__line-break {
+    border-bottom: 2px solid $c-primary;
+  }
+}

@@ -1,0 +1,205 @@
+@import '../abstracts/';
+
+// ===========================================================================
+// LAYOUT STYLES
+// ===========================================================================
+
+.outer-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: $section-padding;
+
+  &.background {
+    background-color: $c-background-primary;
+
+    &.primary {
+      background-color: $c-background-primary;
+    }
+    &.secondary {
+      background-color: $c-background-secondary;
+      *:not(.show-as-button) {
+        color: $c-text-inverse;
+      }
+    }
+    &.tertiary {
+      background-color: $c-background-tertiary;
+    }
+    &.quaternary {
+      background-color: $c-background-quaternary;
+      *:not(.show-as-button) {
+        color: $c-text-inverse;
+      }
+    }
+    &.article {
+      background-color: $c-background-primary;
+    }
+  }
+  @media (max-width: $bp-mobile) {
+    padding: $section-padding-mobile;
+  }
+}
+
+.inner-wrapper {
+  width: 100%;
+  max-width: $content-width;
+}
+
+.grid-container {
+  display: grid;
+  gap: $grid-gap;
+
+  &.two-columns {
+    grid-template-columns: 1fr 1fr;
+    @media (max-width: $bp-mobile) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &.three-columns {
+    grid-template-columns: 1fr 1fr 1fr;
+    @media (max-width: $bp-tablet) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: $bp-mobile) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &.four-columns {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  &.five-columns {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  &.six-columns {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  &.four-columns,
+  &.five-columns,
+  &.six-columns {
+    @media (max-width: $bp-desktop) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    @media (max-width: $bp-laptop) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media (max-width: $bp-tablet) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: $bp-mobile) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.arrow {
+  width: 100%;
+  @media (max-width: $bp-tablet) {
+    display: none;
+  }
+}
+
+.image {
+  min-height: 100%;
+  min-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+body {
+  &.no-scroll-mobile {
+    @media screen and (max-width: $bp-mobile) {
+      overflow-y: hidden;
+    }
+  }
+  &.no-scroll-tablet {
+    @media screen and (max-width: $bp-tablet) {
+      overflow-y: hidden;
+    }
+  }
+}
+
+//container components hold a title container: here is the global styling
+.title-container {
+  * {
+    text-align: center;
+  }
+  &:not(:empty) {
+    padding: 24px 0;
+  }
+}
+
+.suspense-screen {
+  width: 100vw;
+  height: 100vh;
+  background-color: $c-primary;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.suspense-loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: relative;
+  animation: rotate 1s linear infinite;
+}
+.suspense-loader::before,
+.suspense-loader::after {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  animation: prixClipFix 2s linear infinite;
+}
+.suspense-loader::after {
+  border-color: $c-quaternary;
+  animation:
+    prixClipFix 2s linear infinite,
+    rotate 0.5s linear infinite reverse;
+  inset: 6px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes prixClipFix {
+  0% {
+    clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
+  }
+  25% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
+  }
+  50% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
+  }
+  75% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+  }
+  100% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+}
+
+// NOTE(Fran): styling when printing
+@media print {
+  .grecaptcha-badge {
+    visibility: hidden;
+  }
+  .c-header__outer-wrapper {
+    display: none;
+  }
+  .c-hero__outer-wrapper {
+    display: none;
+  }
+}

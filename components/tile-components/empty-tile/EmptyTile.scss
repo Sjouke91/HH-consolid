@@ -1,0 +1,7 @@
+.c-empty-tile {
+  &__tile-wrapper {
+    @media (max-width: $bp-mobile) {
+      display: none;
+    }
+  }
+}

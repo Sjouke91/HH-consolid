@@ -1,0 +1,21 @@
+// ===========================================================================
+// STYLE IMPORTS
+// ===========================================================================
+// NOTE: This file contains all the style imports for and from the whole repo.
+// When creating a new style in one of the folders make sure to import it here
+// ===========================================================================
+
+//ABSTRACT
+@import './abstracts';
+
+//BASE
+@import './base';
+
+// LAYOUT
+@import './layout';
+
+// UI ELEMENTS
+@import './ui-elements';
+
+// COMPONENTS
+@import './components';

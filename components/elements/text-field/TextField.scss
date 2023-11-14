@@ -1,0 +1,16 @@
+.c-text-field {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &.--full-width-input {
+      grid-column: 1/3;
+    }
+    //safari styling
+    input[type='date'] {
+      width: 100%;
+      min-width: calc(100% - 16px);
+    }
+  }
+}

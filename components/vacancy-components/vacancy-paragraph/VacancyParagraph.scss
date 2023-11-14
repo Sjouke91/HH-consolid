@@ -1,0 +1,91 @@
+.c-vacancy-paragraph {
+  &__outer-wrapper {
+    background-color: white;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: $bp-mobile) {
+      margin-top: 0;
+    }
+  }
+  &__inner-wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 2fr 1fr;
+    gap: 90px;
+    margin-top: 360px; // needed to make space for sticky header
+
+    //email block's email input
+    input[id="email"]:first-of-type{
+      border:2px solid $c-primary;;
+    }
+
+    @media (max-width: $bp-tablet) {
+      grid-template-columns: 1fr;
+    }
+    @media (max-width: $bp-mobile) {
+      margin-top: 0;
+    }
+
+  }
+  &__image-container {
+    overflow: hidden;
+    height: 400px;
+  }
+  &__image {
+    min-height: 100%;
+    min-width: 100%;
+    height: auto;
+    width: auto;
+    z-index: 0;
+    object-fit: cover;
+  }
+  &__text-container {
+    max-width: 100vw;
+
+    * {
+      color: $c-text;
+    }
+    &.left * {
+      text-align: left;
+    }
+    &.center * {
+      text-align: center;
+    }
+    &.right * {
+      text-align: right;
+    }
+    p {
+      /*strong {
+        font-size: 39px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 46.8px; // 120%
+        letter-spacing: -0.975px;
+        margin-bottom: 16px;
+      }*/
+      margin-bottom: 16px;
+    }
+  }
+  &__title {
+    word-break: break-word;
+    hyphens: auto;
+  }
+  &__body-text {
+    max-width: 100vw;
+  }
+  &__sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  &__button-container{
+    @media (max-width: $bp-mobile) {
+      a.show-as-button{
+        width:100%;
+      }
+    }
+  }
+}

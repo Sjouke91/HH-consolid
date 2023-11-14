@@ -1,0 +1,68 @@
+.c-social-share {
+  &__tile-wrapper {
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+    background: $c-white;
+    overflow: hidden;
+    padding: 24px 32px;
+    @media (max-width: $bp-mobile) {
+      padding: 24px;
+    }
+  }
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    @media (max-width: $bp-mobile) {
+      padding: unset;
+    }
+  }
+  &__title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    text-transform: unset;
+    margin-bottom: 16px;
+    word-break: break-word;
+    hyphens: auto;
+  }
+  &__subtitle {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+  }
+  &__socials-container {
+    display: flex;
+    gap: 16px;
+  }
+  &__socials {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    background: $c-primary;
+
+    &:hover {
+      background: $c-secondary;
+    }
+    &.facebook {
+      mask-image: url(/circle8-facebook.svg);
+    }
+    &.linkedin {
+      mask-image: url(/circle8-linkedin.svg);
+    }
+    &.twitter {
+      mask-image: url(/circle8-twitter.svg);
+    }
+    &.whatsapp {
+      mask-image: url(/circle8-whatsapp.svg);
+    }
+  }
+}

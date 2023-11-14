@@ -1,0 +1,49 @@
+.c-text-field {
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    &.--full-width-input {
+      grid-column: 1/3;
+
+      textarea {
+        height: 100%;
+        border-radius: 30px;
+        color: $c-secondary;
+      }
+    }
+
+    label.file {
+      background-color: $c-secondary;
+      padding: 15px 60px;
+      border-radius: 20px;
+      text-transform: unset;
+      position: relative;
+      cursor: pointer;
+
+      &::before {
+        position: absolute;
+        content: '';
+        background-image: url('/circle8-upload.svg');
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 1.5rem;
+      }
+
+      &:hover {
+        outline: 2px solid $c-white;
+      }
+    }
+
+    input[type='file'] {
+      display: none;
+    }
+  }
+
+  &__file_notice {
+    color: silver;
+  }
+}

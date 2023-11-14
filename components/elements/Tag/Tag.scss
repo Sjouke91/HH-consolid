@@ -1,0 +1,37 @@
+.c-tag {
+  &__item {
+    color: $c-quaternary;
+    animation-name: tag-fade;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-out;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 32px;
+    text-transform: uppercase;
+
+    &.title {
+      color: $c-quaternary !important;
+      font-size: 39px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 46.8px;
+      letter-spacing: -0.78px;
+      text-transform: uppercase;
+      @media (max-width: $bp-mobile) {
+        font-size: 33px;
+        line-height: 40px;
+        letter-spacing: -1.32px;
+      }
+    }
+
+    @keyframes tag-fade {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}
